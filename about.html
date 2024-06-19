@@ -52,6 +52,7 @@
 <body>
 
   <!-- ======= Hero Section ======= -->
+  <!-- ======= Hero Section ======= -->
   <div id="hero">
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center">
@@ -61,7 +62,7 @@
           <!-- Add your h1 element here -->
           <h1>
               <span class="big-letter" style="color: rgb(166, 124, 19); margin-right: -5px; margin-left: 76px; font-size: 68px;">P</span> <p>
-          <span class="bottom-text">ozhilan solutions</span>
+          <span class="bottom-text">ozhilan solutions </span>
             </p>
           </h1>
       </div>
@@ -69,39 +70,39 @@
         <span class="close-icon">&times;</span>
         <ul>
             <!-- Mobile navigation links -->
-             <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-            <li><a class="nav-link scrollto active" href="about.html">About</a></li>
-            <li><a class="nav-link scrollto" href="service.html">Services</a></li>
-            <li><a class="nav-link scrollto" href="why.html">Why Choose Us</a></li>
-            <li><a class="nav-link scrollto" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-link scrollto" href="testimonial.html">Testimonials</a></li>
-            <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-            <div class="header-social-links d-flex align-items-center">
+             <li><a class="nav-link scrollto active" href="index.html"style="margin-right: 40px;">Home</a></li>
+            <li><a class="nav-link scrollto" href="about.html"style="margin-right: 40px;">About</a></li>
+            <li><a class="nav-link scrollto" href="service.html"style="margin-right: 40px;">Services</a></li>
+            <li><a class="nav-link scrollto" href="why.html"style="margin-right: 40px;">Why Choose Us</a></li>
+            <li><a class="nav-link scrollto" href="portfolio.html"style="margin-right: 40px;">Portfolio</a></li>
+            <li><a class="nav-link scrollto" href="testimonial.html"style="margin-right: 40px;">Testimonials</a></li>
+            <li><a class="nav-link scrollto" href="contact.html"style="margin-right: 40px;">Contact</a></li>
+            <div class="header-social-links d-flex align-items-center" style="margin-right: 45px;">
               <a href="https://wa.me/+918148086997" target="_blank" class="whatsapp"><i class="bi bi-whatsapp" style="color: whitesmoke;"></i></a>
               <a href="#" target="_blank"class="facebook"><i class="bi bi-facebook" style="color: whitesmoke;"></i></a>
               <a href="#" target="_blank"class="instagram"><i class="bi bi-instagram" style="color: whitesmoke;"></i></a>
               </div>
         </ul>
     </div>
-  
+
         <div class="container"></div>
          <nav id="navbar" class="navbar">
             <!-- Navigation links -->
             
       <ul>
        
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto  active" href="about.html">About</a></li>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html">About</a></li>
           <li><a class="nav-link scrollto" href="service.html">Services</a></li>
           <li><a class="nav-link scrollto" href="why.html">Why Choose Us</a></li>
           <li><a class="nav-link scrollto" href="portfolio.html">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="testimonial.html">Testimonials</a></li>
           <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-          <div class="header-social-links d-flex align-items-center">
-            <a href="https://wa.me/+918148086997" target="_blank" class="whatsapp"><i class="bi bi-whatsapp" style="color: whitesmoke;"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook" style="color: whitesmoke;"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram" style="color: whitesmoke;"></i></a>
-           </div>
+          <!-- <div class="header-social-links d-flex align-items-center">
+           <a href="https://wa.me/+918148086997" target="_blank" class="whatsapp" ><i class="bi bi-whatsapp" style="color: whitesmoke; padding-left: 1px;"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook" style="color: whitesmoke; "></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram" style="color: whitesmoke;"></i></a> 
+           </div> -->
       </ul>
         
         <!-- Social links -->
@@ -117,8 +118,18 @@
         </div>
         
         <!-- Menu box for mobile -->
-       
-        
+       <style>       
+       .hamburger-wrapper{
+        display: none;
+       }
+       @media (max-width: 1600px){
+       .hamburger-wrapper {
+        display: flex;
+      
+       }}
+
+      </style>
+
     </header>
 
     <!-- Video container -->
@@ -130,7 +141,18 @@
     <!-- Social links (again, if needed) -->
      
 </div>
+<style>
 
+
+/* CSS for media (max-width: 1600px) */
+@media (max-width: 1600px) {
+  #menuIcon {
+    display: inline-block; /* Display menu icon in media view */
+  }
+}
+
+/* Add the rest of your CSS code here */
+</style>
    
  <!-- End Header -->
 
@@ -482,81 +504,83 @@ document.addEventListener('scroll', function() {
 
   </script>
   <!-- End About Section -->
-<!-- ======= Footer ======= -->
-<footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 text-md-right text-left">
-          <div class="quick-links" style="margin-bottom: -10px;  margin-right: 50px;">
-            <h4 style="color: rgb(235, 174, 19); margin-right: 20px;">Quick Links</h4>
-            <ul style="list-style-type: none; padding: 0;">
-              <li><a href="index.html" style="color: white; margin-bottom: 15px;">Home</a></li>
-              <li><a href="about.html" style="color: white; margin-bottom: 15px;">About Us</a></li>
-              <li><a href="service.html" style="color: white; margin-bottom: 15px;">Services</a></li>
-              <li><a href="why.html" style="color: white; margin-bottom: 15px;">why-choose-us</a></li>
-              <li><a href="portfolio.html" style="color: white; margin-bottom: 15px;">Portfolio</a></li>
-              <li><a href="testimonial.html" style="color: white; margin-bottom: 15px;">Testimonial</a></li>
-              <li><a href="contact.html" style="color: white; margin-bottom: 15px;">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-     
-    
-        <div class="col-md-4">
-          <div class="contact-details" >
-            <h4 style="color: rgb(235, 174, 19);">Contact Us</h4>
-            <p style="font-size: 16px; margin-top: -10px; margin-bottom: 5px;">Address:<br> <a href= "https://maps.app.goo.gl/wfX6FuNSJUuSTd7h9" target="_blank" style="color: whitesmoke;">4/338 CLRI Nagar, 1st Street, Chennai-600 115</a></p>
-            <p style="font-size: 16px; margin-bottom: 5px; ">Phone: <br> <a href="tel:+918148086997"  target="_blank" style="color: whitesmoke;">+91 8148086997</a></p>
-            <p style="font-size: 16px; margin-bottom: 20px;">Email:<br> <a href="mailto:pozhilansolutions@gmail.com"  target="_blank" style="color: whitesmoke;" >pozhilansolutions@gmail.com</a></p>
-                  </div>
-        </div>
-        <div class="col-md-4">
-          <div class="google-map"style="margin-bottom: 10px;">
-            <h4 style="color: rgb(235, 174, 19); margin-left: 20px;">Location</h4>
-            <!-- Replace the iframe src attribute with your Google Map embed code -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.388359443811!2d80.25272500000001!3d12.946983000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d04df64af4b%3A0xcb6591fbdb0c2f62!2sStar%20Kingz!5e0!3m2!1sen!2sin!4v1715362867337!5m2!1sen!2sin" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe> </div>
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-md-right text-left">
+        <div class="quick-links" style="margin-bottom: -10px; margin-right: 50px;">
+          <h4 style="color: rgb(235, 174, 19); margin-right: 20px;">Quick Links</h4>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a href="index.html" style="color: white; margin-bottom: 15px;">Home</a></li>
+            <li><a href="about.html" style="color: white; margin-bottom: 15px;">About Us</a></li>
+            <li><a href="service.html" style="color: white; margin-bottom: 15px;">Services</a></li>
+            <li><a href="why.html" style="color: white; margin-bottom: 15px;">Why Choose Us</a></li>
+            <li><a href="portfolio.html" style="color: white; margin-bottom: 15px;">Portfolio</a></li>
+            <li><a href="testimonial.html" style="color: white; margin-bottom: 15px;">Testimonial</a></li>
+            <li><a href="contact.html" style="color: white; margin-bottom: 15px;">Contact Us</a></li>
+          </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="copyright">
-            &copy; Copyright <strong>Pozhilan Solutions</strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            Designed by<a href="mailto:pozhilansolutions@gmail.com"style="color: rgb(181, 154, 2);"> Pozhilan Solutions</a>
-          </div>
+  
+      <div class="col-md-4">
+        <div class="contact-details">
+          <h4 style="color: rgb(235, 174, 19);">Contact Us</h4>
+          <p style="font-size: 16px; margin-top: -10px; margin-bottom: 5px;">Address:<br> <a href="https://maps.app.goo.gl/wfX6FuNSJUuSTd7h9" target="_blank" style="color: whitesmoke;">4/338 CLRI Nagar, 1st Street, Neelankarai, Chennai-600 115</a></p>
+          <p style="font-size: 16px; margin-bottom: 5px;">Phone: <br> <a href="tel:+918148086997" target="_blank" style="color: whitesmoke;">+91 8148086997</a></p>
+          <p style="font-size: 16px; margin-bottom: 20px;">Email:<br> <a href="mailto:pozhilansolutions@gmail.com" target="_blank" style="color: whitesmoke;">pozhilansolutions@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="google-map" style="margin-bottom: 10px;">
+          <h4 style="color: rgb(235, 174, 19); margin-left: 20px;">Location</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.388359443811!2d80.25272500000001!3d12.946983000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d04df64af4b%3A0xcb6591fbdb0c2f62!2sStar%20Kingz!5e0!3m2!1sen!2sin!4v1715362867337!5m2!1sen!2sin" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe>
         </div>
       </div>
     </div>
-  </footer>
-  
+    <div class="row">
+      <div class="col-md-12">
+        <div class="social-media" style="text-align: center; margin: 20px 0;">
+          <a href="https://www.facebook.com/profile.php?id=61559224093249&mibextid=ZbWKwL" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/pozhilan2020/" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+         <a href="https://www.twitter.com" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        <div class="copyright">
+          &copy; Copyright <strong>Pozhilan Solutions</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="mailto:pozhilansolutions@gmail.com" style="color: rgb(181, 154, 2);">Pozhilan Solutions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
   <!-- End Footer -->
-  <style> /* Default styles */
-
-
+  
+<style>
 /* Media queries */
 
-
-@media (max-width: 1100px) {
+@media (max-width: 1600px) {
  
 
   #footer .google-map iframe {
     height: 150px;
-    width: 250px;
+    width: 200px;
   }
   .col-md-4 {
     margin-left: auto;
     margin-right: auto;
-    max-width: 300px; /* Adjust max-width as needed */
+   
   }
   /* .col-md-4 {
   text-align: center;
 } */
 .quick-links{
-  
+  margin-bottom: 80px;
   margin-left: 50px ;
-  
-  max-width: 300px;
+ max-width: 300px;
 }
 .contact-details{
   align-items: center;
@@ -574,6 +598,7 @@ document.addEventListener('scroll', function() {
 
 
 }
+     
 </style>
 
 
@@ -617,15 +642,17 @@ document.addEventListener('scroll', function() {
           </div>
           <div class="col-lg-6">
             <!-- Right floating icon -->
-            <div class="floating-contact right">
+            <!-- <div class="floating-contact right">
               <a href="mailto:pozhilansolutions@gmail.com" target="blank">
                 <img src="assets/img/mail.png" alt="Mail Icon">
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
-      
+   
+    
+
 <!-- script for testimonial swiper button starts -->
 
 <script>  document.addEventListener('DOMContentLoaded', function () {
@@ -722,7 +749,19 @@ document.addEventListener("DOMContentLoaded", function() {
     },
   });
 </script>
-
-</body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6672ac59981b6c56477ed4fd/1i0nv2frh';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body> 
 
 </html>
