@@ -109,7 +109,7 @@
         
         
         <!-- Hamburger menu icon -->
-        <div class="hamburger-wrapper">
+        <div class="hamburger-wrapper" >
             <div class="hamburger-icon" id="menuIcon">
                 <span></span>
                 <span></span>
@@ -122,11 +122,64 @@
        .hamburger-wrapper{
         display: none;
        }
-       @media (max-width: 1600px){
+       @media (max-width: 1000px){
        .hamburger-wrapper {
         display: flex;
       
-       }}
+       }
+       .hamburger-icon {
+      display: block;
+      cursor: pointer;
+    }
+
+    .hamburger-icon span {
+      display: block;
+      margin-bottom: 5px;
+      background-color: #fff;
+      margin-left: 20px;
+    }
+
+    /* Adjusting the width of each span */
+    .hamburger-icon span:nth-child(1),
+    .hamburger-icon span:nth-child(3) {
+      width: 30px;
+      height: 4px;
+    }
+
+    .hamburger-icon span:nth-child(2) {
+      width: 20px;
+      height: 3px;
+    }
+
+    /* Additional styling for creating the "hamburger" effect */
+    .hamburger-icon.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-icon.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+</style>
+
+<style>
+  
+
+  /* CSS for media (max-width: 1600px) */
+  @media (max-width: 1600px) {
+    #menuIcon {
+      display: inline-block; /* Display menu icon in media view */
+    }
+  }
+
+  /* Add the rest of your CSS code here */
+</style>
+ 
+
 
       </style>
 
@@ -144,12 +197,6 @@
 <style>
 
 
-/* CSS for media (max-width: 1600px) */
-@media (max-width: 1600px) {
-  #menuIcon {
-    display: inline-block; /* Display menu icon in media view */
-  }
-}
 
 /* Add the rest of your CSS code here */
 </style>
@@ -415,12 +462,13 @@ margin: 0; /* Reset margin to remove extra space */
 
 <style>
   /* CSS for mobile devices */
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     /* Adjust margin or padding for the "About Us" section */
     #about {
-      margin-top: -500px; /* Adjust as needed */
+      margin-top: -450px; /* Adjust as needed */
     }
   }
+
 </style>
 
 
@@ -430,13 +478,57 @@ margin: 0; /* Reset margin to remove extra space */
           
             white-space: nowrap; /* Prevent text from wrapping */
         }
-        @media screen and (max-width: 1100px) {
+        @media screen and (max-width: 1000px) {
     #typing-text {
         display: block; /* Hide the typing text */
         white-space: normal; /* Allow text to wrap */
     }
 }
+<style>
+  #typing-text {
+          
+          
+            font-size: 40px;
+        }
+
+
+
+
+        @media (max-width: 1600px) {
+          #typing-text {
+         margin-top: 10px;
+        display: flex; /* Hide the typing text */
+       font-size: 25px;
+       
+        
+    }
+    #typing-text {
+
+          white-space: nowrap; /* Prevent text from wrapping */
+      }
+    
+    }
+
+@media screen and (max-width: 1000px) {
+    #typing-text {
+      margin-top: 10px;
+        display: flex; /* Hide the typing text */
+        white-space: normal; /* Allow text to wrap */
+        margin-left: 5px;
+        font-size: 20px;
+        align-items: center;
+        text-align: center;
+        
+    }
+    #typing-text {
+          
+          white-space: nowrap; /* Prevent text from wrapping */
+      }
+
+}
   
+  
+
 
 @keyframes rotate {
     0% { transform: rotate(0deg); }
