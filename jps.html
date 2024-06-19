@@ -86,19 +86,19 @@
         <nav id="navbar" class="navbar">
             <!-- Navigation links -->
             <ul>
-                <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about">About</a></li>
                 <li><a class="nav-link scrollto" href="#services">Services</a></li>
                 <li><a class="nav-link scrollto" href="#why-choose-us">Why Choose Us</a></li>
-                <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link scrollto  active" href="#portfolio">Portfolio</a></li>
                 <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                <div class="header-social-links d-flex align-items-center">
+                <!-- <div class="header-social-links d-flex align-items-center">
                     <a href="https://wa.me/+919551122544" target="_blank" class="whatsapp"><i class="bi bi-whatsapp" style="color: whitesmoke;"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook" style="color: whitesmoke;"></i></a>
                     <a href="#" class="instagram"><i class="bi bi-instagram" style="color: whitesmoke;"></i></a>
                     <a href="#" class="linkedin"><i class="bi bi-linkedin" style="color: whitesmoke;"></i></a>
-                </div>
+                </div> -->
             </ul>
         </nav>
         <!-- Hamburger menu icon -->
@@ -111,7 +111,17 @@
         </div>
     </header>
  
-  
+    <style>       
+      .hamburger-wrapper{
+       display: none;
+      }
+      @media (max-width: 1000px){
+      .hamburger-wrapper {
+       display: flex;
+     
+      }}
+
+     </style>
 
 
   <!-- ======= Hero Section ======= -->
@@ -320,7 +330,92 @@ h1 {
       transform: translateY(-8px) rotate(-45deg);
     }
     
+    @media (max-width: 1600px) {
+    #menuIcon {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      padding-top: 10px;
+      margin-right: 15px;
+      display:inline-block;
+    }
 
+    /* Rotate the menu icon when the menu is open */
+    #menuIcon.open-menu {
+      transform: rotate(360deg);
+    }
+
+    .close-icon {
+      transition: transform 0.3s ease;
+      font-size: 54px;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      padding-left: 20px;
+      cursor: pointer;
+      color: #fff;
+      margin-right: 30px;
+    }
+
+    /* Rotate the close icon when the menu is open */
+    .close-icon.open-menu {
+      transform: rotate(360deg);
+    }
+
+    .hamburger-icon {
+      display: block;
+      cursor: pointer;
+    }
+
+    .hamburger-icon span {
+      display: block;
+      margin-bottom: 5px;
+      background-color: #fff;
+      margin-left: 20px;
+    }
+
+    /* Adjusting the width of each span */
+    .hamburger-icon span:nth-child(1),
+    .hamburger-icon span:nth-child(3) {
+      width: 30px;
+      height: 4px;
+    }
+
+    .hamburger-icon span:nth-child(2) {
+      width: 20px;
+      height: 3px;
+    }
+
+    /* Additional styling for creating the "hamburger" effect */
+    .hamburger-icon.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-icon.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+</style>
+
+<style>
+  
+
+  /* CSS for media (max-width: 1600px) */
+  @media (max-width: 1600px) {
+    #menuIcon {
+      display: inline-block; /* Display menu icon in media view */
+    }
+  }
+
+  /* Add the rest of your CSS code here */
+</style>
+ 
+
+
+ 
      </style>
     
      
@@ -371,11 +466,16 @@ h1 {
           <!-- Portfolio Information -->
           <div class="col-lg-4">
             <div class="portfolio-info">
+              <ol class="breadcrumb">
+              <li class="breadcrumb-item">Page <a href="index.html #portfolio"> / Home </a></li>
+              </ol>
               <h3>Project Information</h3>
               <ul>
+                <li><strong>Project Name</strong>: JPS CONSTRUCTION</li>
                 <li><strong>Category</strong>: Web Design</li>
-                <li><strong>Client</strong>: JPS CONSTRUCTION</li>
+           
                 <li><strong>Project URL</strong>: <a href="https://lavanyaviknesh.github.io/Jpsconstruction/" target="blank">https://Jpsconstruction.netlify.app</a></li>
+                
               </ul>
             </div>
           </div>
@@ -398,99 +498,101 @@ h1 {
 </div>
   </main><!-- End #main -->
 
- <!-- ======= Footer ======= -->
- <footer id="footer">
+  <!-- ======= Footer ======= -->
+<footer id="footer" style="margin-top: 30px;">
   <div class="container">
     <div class="row">
       <div class="col-md-4 text-md-right text-left">
-        <div class="quick-links" style="margin-bottom: -10px;  margin-right: 50px;">
+        <div class="quick-links" style="margin-bottom: -10px; margin-right: 50px;">
           <h4 style="color: rgb(235, 174, 19); margin-right: 20px;">Quick Links</h4>
           <ul style="list-style-type: none; padding: 0;">
-            <li><a href="#" style="color: white; margin-bottom: 15px;">Home</a></li>
-            <li><a href="#" style="color: white; margin-bottom: 15px;">About Us</a></li>
-            <li><a href="#" style="color: white; margin-bottom: 15px;">Services</a></li>
-            <li><a href="#" style="color: white; margin-bottom: 15px;">why-choose-us</a></li>
-            <li><a href="#" style="color: white; margin-bottom: 15px;">Portfolio</a></li>
-            <li><a href="#" style="color: white; margin-bottom: 15px;">Testimonial</a></li>
-            <li><a href="#" style="color: white; margin-bottom: 15px;">Contact Us</a></li>
+            <li><a href="index.html" style="color: white; margin-bottom: 15px;">Home</a></li>
+            <li><a href="about.html" style="color: white; margin-bottom: 15px;">About Us</a></li>
+            <li><a href="service.html" style="color: white; margin-bottom: 15px;">Services</a></li>
+            <li><a href="why.html" style="color: white; margin-bottom: 15px;">Why Choose Us</a></li>
+            <li><a href="portfolio.html" style="color: white; margin-bottom: 15px;">Portfolio</a></li>
+            <li><a href="testimonial.html" style="color: white; margin-bottom: 15px;">Testimonial</a></li>
+            <li><a href="contact.html" style="color: white; margin-bottom: 15px;">Contact Us</a></li>
           </ul>
         </div>
       </div>
-   
   
       <div class="col-md-4">
-        <div class="contact-details" >
+        <div class="contact-details">
           <h4 style="color: rgb(235, 174, 19);">Contact Us</h4>
-          <p style="font-size: 16px; margin-top: -10px; margin-bottom: 5px;">Address:<br> 123 Street, City, Country</p>
-          <p style="font-size: 16px;  margin-bottom: 5px; ">Phone: <br> +1234567890</p>
-          <p style="font-size: 16px;  margin-bottom: 20px;">Email:<br> info@example.com</p>
+          <p style="font-size: 16px; margin-top: -10px; margin-bottom: 5px;">Address:<br> <a href="https://maps.app.goo.gl/wfX6FuNSJUuSTd7h9" target="_blank" style="color: whitesmoke;">4/338 CLRI Nagar, 1st Street, Neelankarai, Chennai-600 115</a></p>
+          <p style="font-size: 16px; margin-bottom: 5px;">Phone: <br> <a href="tel:+918148086997" target="_blank" style="color: whitesmoke;">+91 8148086997</a></p>
+          <p style="font-size: 16px; margin-bottom: 20px;">Email:<br> <a href="mailto:pozhilansolutions@gmail.com" target="_blank" style="color: whitesmoke;">pozhilansolutions@gmail.com</a></p>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="google-map"style="margin-bottom: 10px;">
+        <div class="google-map" style="margin-bottom: 10px;">
           <h4 style="color: rgb(235, 174, 19); margin-left: 20px;">Location</h4>
-          <!-- Replace the iframe src attribute with your Google Map embed code -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.17120202523!2d-74.11808692293236!3d40.70582563002381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1620144692871!5m2!1sen!2sin" width="100%" height="200" style="border:0; margin-bottom: 15px;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.388359443811!2d80.25272500000001!3d12.946983000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d04df64af4b%3A0xcb6591fbdb0c2f62!2sStar%20Kingz!5e0!3m2!1sen!2sin!4v1715362867337!5m2!1sen!2sin" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
+        <div class="social-media" style="text-align: center; margin: 20px 0;">
+          <a href="https://www.facebook.com/profile.php?id=61559224093249&mibextid=ZbWKwL" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/pozhilan2020/" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+         <a href="https://www.twitter.com" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         <div class="copyright">
           &copy; Copyright <strong>Pozhilan Solutions</strong>. All Rights Reserved
         </div>
         <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/" style="color: rgb(181, 154, 2);">Pozhilan Solutions</a>
+          Designed by <a href="mailto:pozhilansolutions@gmail.com" style="color: rgb(181, 154, 2);">Pozhilan Solutions</a>
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- End Footer -->
-<style> /* Default styles */
-
-
+  <!-- End Footer -->
+  
+<style>
 /* Media queries */
 
+@media (max-width: 1600px) {
+ 
 
-@media (max-width: 1100px) {
-
-
-#footer .google-map iframe {
-  height: 150px;
-  width: 250px;
-}
-.col-md-4 {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 300px; /* Adjust max-width as needed */
-}
-/* .col-md-4 {
-text-align: center;
+  #footer .google-map iframe {
+    height: 150px;
+    width: 200px;
+  }
+  .col-md-4 {
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  /* .col-md-4 {
+  text-align: center;
 } */
 .quick-links{
-
-margin-left: 50px ;
-
-max-width: 300px;
+  margin-bottom: 80px;
+  margin-left: 50px ;
+ max-width: 300px;
 }
 .contact-details{
-align-items: center;
-margin-left: 50px;
+  align-items: center;
+  margin-left: 50px;
 }
 .google-map {
-margin-left: 30px;
+  margin-left: 30px;
 }
 
 .google-map.h4{
-margin-right: 40px;
-align-items: center;
-display: none;
+  margin-right: 40px;
+  align-items: center;
+  display: none;
 }
 
 
 }
+     
 </style>
 
 
@@ -501,53 +603,55 @@ display: none;
 
 
 
-
+ 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<!-- Vendor JS Files -->
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <div class="container">
-<div class="row">
-  <div class="col-lg-6">
-    <!-- Left floating icon -->
-    <div class="floating-contact left">
-      <a href="#">
-        <img src="assets/img/whats.png" alt="WhatsApp Icon">
-      </a>
-    </div>
-  </div>
-  <div class="col-lg-6">
-    <!-- Right floating icon -->
-    <div class="floating-contact right">
-      <a href="#">
-        <img src="assets/img/mail.png" alt="Mail Icon">
-      </a>
-    </div>
-  </div>
-</div>
-</div>
-</div>
+  <div class="row">
+    <div class="col-lg-6">
+      <!-- Left floating icon -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Left floating icon -->
+            <div class="floating-contact left">
+              <a href="https://wa.me/8148086997"target="blank">
+                <img src="assets/img/whats.png" alt="WhatsApp Icon">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Right floating icon -->
+            
+          </div>
+        </div>
+      </div>
+   
+    
+
 <!-- script for testimonial swiper button starts -->
 
 <script>  document.addEventListener('DOMContentLoaded', function () {
-var swiper = new Swiper('.swiper-container', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+  var swiper = new Swiper('.swiper-container', {
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+  });
 });
 </script>
 <!-- script for testimonial swiper button end -->
@@ -555,29 +659,29 @@ var swiper = new Swiper('.swiper-container', {
 <!-- script for nav bar scroll and active in mobile version starts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-$(document).ready(function() {
-  // Function to update active class based on scroll position
-  function updateActiveClass() {
-    var scrollPos = $(document).scrollTop();
-    $('#menuBox ul li').removeClass('active');
-    $('#menuBox ul li').each(function() {
-      var currLink = $(this);
-      var refElement = $(currLink.find('a').attr("href"));
-      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-        $('#menuBox ul li').removeClass("active");
-        currLink.addClass("active");
-      }
-    });
-  }
+  $(document).ready(function() {
+    // Function to update active class based on scroll position
+    function updateActiveClass() {
+      var scrollPos = $(document).scrollTop();
+      $('#menuBox ul li').removeClass('active');
+      $('#menuBox ul li').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.find('a').attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#menuBox ul li').removeClass("active");
+          currLink.addClass("active");
+        }
+      });
+    }
 
-  // Call the function on scroll
-  $(document).scroll(function() {
+    // Call the function on scroll
+    $(document).scroll(function() {
+      updateActiveClass();
+    });
+
+    // Call the function on page load
     updateActiveClass();
   });
-
-  // Call the function on page load
-  updateActiveClass();
-});
 </script>
 
 <!-- script for nav bar scroll and active in mobile version end -->
@@ -585,34 +689,34 @@ $(document).ready(function() {
 <!-- script for navbar open in mobile version starts -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-let menuBox = document.getElementById("menuBox");
-let menuIcon = document.getElementById("menuIcon");
-let closeIcon = document.querySelector(".close-icon");
+  let menuBox = document.getElementById("menuBox");
+  let menuIcon = document.getElementById("menuIcon");
+  let closeIcon = document.querySelector(".close-icon");
 
-// Function to toggle the menu box and menu icons
-function toggleMenu() {
-  menuBox.classList.toggle("open-menu");
+  // Function to toggle the menu box and menu icons
+  function toggleMenu() {
+    menuBox.classList.toggle("open-menu");
 
-  // Toggle rotation of the menu icon
-  menuIcon.classList.toggle("open-menu");
+    // Toggle rotation of the menu icon
+    menuIcon.classList.toggle("open-menu");
 
-  // Toggle rotation of the close icon
-  closeIcon.classList.toggle("open-menu");
-}
+    // Toggle rotation of the close icon
+    closeIcon.classList.toggle("open-menu");
+  }
 
-// Toggle menu box and menu icons when menu icon is clicked
-menuIcon.onclick = function() {
-  toggleMenu();
-};
+  // Toggle menu box and menu icons when menu icon is clicked
+  menuIcon.onclick = function() {
+    toggleMenu();
+  };
 
-// Add click event listener to the close icon
-closeIcon.addEventListener("click", function() {
-  // Hide the menu box
-  menuBox.classList.remove("open-menu");
-  // Reset rotation of the menu icon and close icon
-  menuIcon.classList.remove("open-menu");
-  this.classList.remove("open-menu");
-});
+  // Add click event listener to the close icon
+  closeIcon.addEventListener("click", function() {
+    // Hide the menu box
+    menuBox.classList.remove("open-menu");
+    // Reset rotation of the menu icon and close icon
+    menuIcon.classList.remove("open-menu");
+    this.classList.remove("open-menu");
+  });
 });
 </script>
 
@@ -620,22 +724,35 @@ closeIcon.addEventListener("click", function() {
 <!-- script for navbar open in mobile version end -->
 
 <script>
-// Initialize Swiper
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 5,
-  loop: true,
-  autoplay: {
-    delay: 2000, // Change delay according to your preference
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+  // Initialize Swiper
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 5,
+    loop: true,
+    autoplay: {
+      delay: 2000, // Change delay according to your preference
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 </script>
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6672ac59981b6c56477ed4fd/1i0nv2frh';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
 </body>
 
-</html>
+</html> 

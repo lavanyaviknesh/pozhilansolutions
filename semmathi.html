@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Imperial Bootstrap Template</title>
+  <title>Pozhilan Solutions</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,8 +24,8 @@
   <meta name="twitter:image" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.jpg" rel="icon">
+  <link href="assets/img/logo.jpg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
@@ -36,129 +36,454 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet"> 
+  <link href="assets/css/nav.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Imperial
-  * Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>
-      <!-- Uncomment below if you prefer to use a text logo -->
-      <!-- <h1 class="logo mr-auto"><a href="index.html">Imperial</a></h1> -->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+  <div id="hero">
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.jpg" alt="" style="height: 60px;width: 80px;">
+            </a>
+            <!-- Add your h1 element here -->
+            <h1>
+                <span class="big-letter" style="color: rgb(166, 124, 19); margin-right: -5px; margin-left: 76px; font-size: 68px;">P</span>
+                <p>
+                    <span class="bottom-text">ozhilan solutions</span>
+                </p>
+            </h1>
+        </div>
+        <div class="menu-box" id="menuBox">
+            <span class="close-icon">&times;</span>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+                <!-- Mobile navigation links -->
+                <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="index.html">About</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#why-choose-us">Why Choose Us</a></li>
+                <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <div class="header-social-links d-flex align-items-center">
+                    <a href="https://wa.me/+919551122544" target="_blank" class="whatsapp"><i class="bi bi-whatsapp" style="color: whitesmoke;"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook" style="color: whitesmoke;"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram" style="color: whitesmoke;"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin" style="color: whitesmoke;"></i></a>
+                </div>
             </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        </div>
+        <nav id="navbar" class="navbar">
+            <!-- Navigation links -->
+            <ul>
+                <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#why-choose-us">Why Choose Us</a></li>
+                <li><a class="nav-link scrollto  active" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                <!-- <div class="header-social-links d-flex align-items-center">
+                    <a href="https://wa.me/+919551122544" target="_blank" class="whatsapp"><i class="bi bi-whatsapp" style="color: whitesmoke;"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook" style="color: whitesmoke;"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram" style="color: whitesmoke;"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin" style="color: whitesmoke;"></i></a>
+                </div> -->
+            </ul>
+        </nav>
+        <!-- Hamburger menu icon -->
+        <div class="hamburger-wrapper">
+            <div class="hamburger-icon" id="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+ 
+    <style>       
+      .hamburger-wrapper{
+       display: none;
+      }
+      @media (max-width: 1000px){
+      .hamburger-wrapper {
+       display: flex;
+     
+      }}
 
-    </div>
-  </header><!-- End Header -->
+     </style>
+
+
+  <!-- ======= Hero Section ======= -->
+  
+    <!-- Navigation bar -->
+    <style>
+      /* Style for the container of the p element */
+
+
+/* Style for the "ozhian solutions" text */
+.bottom-text {
+    position: absolute; /* Position the text absolutely */
+    bottom: 0; /* Position it at the bottom */
+    font-size: 18px;
+    margin-left: -5px;
+}
+
+@media (max-width: 768px) {
+    /* Adjust font sizes for smaller screens */
+   
+    
+    p {
+        font-size: 0.8em;
+      
+    }
+
+    /* Adjust font size for big-letter span */
+    .big-letter {
+        padding-top: 20px;
+        display: flex;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    /* Adjust font size for bottom-text span */
+    .bottom-text {
+        font-size: 0.6em;
+        padding-bottom: 10px;
+        margin-left: 5px;
+
+    }
+}
+      h1 {
+          font-size: 24px; /* Adjust the font size as needed */
+          color: #333; /* Change the color as needed */
+        display: flex;
+          white-space: nowrap;
+           margin-left: 90px;
+          
+        
+         
+      }
+      /* CSS for the big "P" */
+      h1 span.big-letter {
+          font-size: 92px; /* Adjust the font size of the big letter */
+          margin-left: 82px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          margin-bottom: 30px;
+          margin-top: 5px;
+          
+        
+      
+      }
+  </style>
+  <style>
+ 
+
+.logo {
+   
+    margin-right: 20px; /* Adjust margin between logo and h1 */
+}
+
+h1 {
+    margin: 0; /* Reset margin to remove extra space */
+}
+
+</style>
+      <style>
+      .header-social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the icons horizontally */
+        height: 100%; /* Ensures the container takes up the full height */
+    }
+    
+    .header-social-links a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #333; /* Adjust color as needed */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .header-social-links a:last-child {
+        margin-right: 0; /* Remove margin-right for the last icon */
+    }
+    
+    .header-social-links a:hover {
+        color: #ff7f50; /* Adjust hover color as needed */
+    }
+    
+    .header-social-links a i {
+        font-size: 18px; /* Adjust size as needed */
+    }
+    </style>
+     
+    <style>
+          .header-nav {
+              background-color: #333; /* Set background color */
+              color: #fff; /* Set text color */
+              padding: 10px 0; /* Add padding */
+              text-align: center; /* Center align text */
+          }
+          
+          .header-nav ul {
+              list-style-type: none; /* Remove bullet points */
+              margin: 0;
+              padding: 0;
+          }
+          
+          .header-nav ul li {
+              display: inline;
+              margin-right: 20px; /* Add spacing between menu items */
+          }
+          
+          .header-nav ul li a {
+              color: #fff; /* Set text color */
+              text-decoration: none; /* Remove underline */
+              transition: color 0.3s ease; /* Add transition effect */
+          }
+          
+          .header-nav ul li a:hover {
+              color: #ff7f50; /* Change color on hover */
+          }
+      </style>
+    
+    <style>
+     #menuIcon {
+        cursor: pointer;
+        transition: transform 0.3s ease; /* Add transition for smooth rotation */
+        padding-top: 10px;
+      }
+    
+      /* Rotate the menu icon when the menu is open */
+      #menuIcon.open-menu {
+        transform: rotate(360deg);
+      }
+    
+      .close-icon {
+        transition: transform 0.3s ease; /* Add transition for smooth rotation */
+      }
+    
+      /* Rotate the close icon when the menu is open */
+      .close-icon.open-menu {
+        transform: rotate(360deg);
+      }
+        .close-icon {
+        font-size: 54px; /* Adjust the font size as needed */
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        padding-left: 20px;
+        cursor: pointer;
+        color: #fff;
+      }
+    .hamburger-icon {
+      display: inline-block;
+      cursor: pointer;
+    
+    }
+    
+    .hamburger-icon span {
+      display: block;
+      margin-bottom: 5px;
+      background-color: #fff; /* Change background color to white */
+      margin-left: 20px;
+    }
+    
+    /* Adjusting the width of each span */
+    .hamburger-icon span:nth-child(1) {
+      width: 30px;
+      height: 4px;
+    }
+    
+    .hamburger-icon span:nth-child(2) {
+      width: 20px;
+      height: 3px;
+    }
+    
+    .hamburger-icon span:nth-child(3) {
+      width: 30px;
+      height: 4px;
+    }
+    
+    /* Additional styling for creating the "hamburger" effect */
+    
+    .hamburger-icon.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .hamburger-icon.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    @media (max-width: 1600px) {
+    #menuIcon {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      padding-top: 10px;
+      margin-right: 15px;
+      display:inline-block;
+    }
+
+    /* Rotate the menu icon when the menu is open */
+    #menuIcon.open-menu {
+      transform: rotate(360deg);
+    }
+
+    .close-icon {
+      transition: transform 0.3s ease;
+      font-size: 54px;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      padding-left: 20px;
+      cursor: pointer;
+      color: #fff;
+      margin-right: 30px;
+    }
+
+    /* Rotate the close icon when the menu is open */
+    .close-icon.open-menu {
+      transform: rotate(360deg);
+    }
+
+    .hamburger-icon {
+      display: block;
+      cursor: pointer;
+    }
+
+    .hamburger-icon span {
+      display: block;
+      margin-bottom: 5px;
+      background-color: #fff;
+      margin-left: 20px;
+    }
+
+    /* Adjusting the width of each span */
+    .hamburger-icon span:nth-child(1),
+    .hamburger-icon span:nth-child(3) {
+      width: 30px;
+      height: 4px;
+    }
+
+    .hamburger-icon span:nth-child(2) {
+      width: 20px;
+      height: 3px;
+    }
+
+    /* Additional styling for creating the "hamburger" effect */
+    .hamburger-icon.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-icon.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-icon.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+</style>
+
+<style>
+  
+
+  /* CSS for media (max-width: 1600px) */
+  @media (max-width: 1600px) {
+    #menuIcon {
+      display: inline-block; /* Display menu icon in media view */
+    }
+  }
+
+  /* Add the rest of your CSS code here */
+</style>
+ 
+
+
+ 
+     </style>
+    
+     
+ <!-- End Header -->
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfoio Details</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfoio Details</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
+  
+  
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
+    
         <div class="row gy-4">
-
+    
+          <!-- Breadcrumbs -->
+          <div class="col-lg-12">
+            <section id="breadcrumbs" class="breadcrumbs">
+              <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                  <ol>
+                    <li></li>
+                    <li><a href="index.html"></a></li>
+                  </ol>
+                </div>
+              </div>
+            </section><!-- End Breadcrumbs -->
+          </div>
+    
+          <!-- Portfolio Images Slider -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/semmathi1.jpg" alt="" style="height: 400px;width: 600px;">
+                  <img src="assets/img/portfolio/semmathi1.jpg" alt="" style="height: 300px;width: 500px;">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/semmathi2.jpg" alt="" style="height: 400px;width: 600px;">
+                  <img src="assets/img/portfolio/semmathi2.jpg" alt="" style="height: 300px;width: 500px;">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/semmathi3.jpg" alt="" style="height: 400px;width: 600px;">
+                  <img src="assets/img/portfolio/semmathi3.jpg" alt="" style="height: 300px;width: 500px;">
                 </div>
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
-
+    
+          <!-- Portfolio Information -->
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <ol class="breadcrumb">
+              <li class="breadcrumb-item">Page <a href="index.html #portfolio"> / Home </a></li>
+              </ol>
+              <h3>Project Information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Project Name</strong>: SEMMATHI ENGINEERING</li>
+                <li><strong>Category</strong>: Web Design</li>
+                <li><strong>Project URL</strong>: <a href="https://lavanyaviknesh.github.io/semmathi/index.html" target="blank">https://semmathiengineering.netlifyapp</a></li>
+                
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
           </div>
-
+    
         </div>
-
+    
       </div>
     </section><!-- End Portfolio Details Section -->
-    <style>   /* For screens smaller than 768px */
+      <style>   /* For screens smaller than 768px */
 @media (max-width: 768px) {
   .swiper-slide img {
     height: 400px; /* Allow the image to adjust its height according to its aspect ratio */
@@ -169,33 +494,117 @@
 }</style>
  
 
-
+</div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="copyright">
-            &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
-          -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-md-right text-left">
+        <div class="quick-links" style="margin-bottom: -10px; margin-right: 50px;">
+          <h4 style="color: rgb(235, 174, 19); margin-right: 20px;">Quick Links</h4>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a href="index.html" style="color: white; margin-bottom: 15px;">Home</a></li>
+            <li><a href="about.html" style="color: white; margin-bottom: 15px;">About Us</a></li>
+            <li><a href="service.html" style="color: white; margin-bottom: 15px;">Services</a></li>
+            <li><a href="why.html" style="color: white; margin-bottom: 15px;">Why Choose Us</a></li>
+            <li><a href="portfolio.html" style="color: white; margin-bottom: 15px;">Portfolio</a></li>
+            <li><a href="testimonial.html" style="color: white; margin-bottom: 15px;">Testimonial</a></li>
+            <li><a href="contact.html" style="color: white; margin-bottom: 15px;">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="contact-details">
+          <h4 style="color: rgb(235, 174, 19);">Contact Us</h4>
+          <p style="font-size: 16px; margin-top: -10px; margin-bottom: 5px;">Address:<br> <a href="https://maps.app.goo.gl/wfX6FuNSJUuSTd7h9" target="_blank" style="color: whitesmoke;">4/338 CLRI Nagar, 1st Street, Neelankarai, Chennai-600 115</a></p>
+          <p style="font-size: 16px; margin-bottom: 5px;">Phone: <br> <a href="tel:+918148086997" target="_blank" style="color: whitesmoke;">+91 8148086997</a></p>
+          <p style="font-size: 16px; margin-bottom: 20px;">Email:<br> <a href="mailto:pozhilansolutions@gmail.com" target="_blank" style="color: whitesmoke;">pozhilansolutions@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="google-map" style="margin-bottom: 10px;">
+          <h4 style="color: rgb(235, 174, 19); margin-left: 20px;">Location</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.388359443811!2d80.25272500000001!3d12.946983000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d04df64af4b%3A0xcb6591fbdb0c2f62!2sStar%20Kingz!5e0!3m2!1sen!2sin!4v1715362867337!5m2!1sen!2sin" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe>
         </div>
       </div>
     </div>
-  </footer><!-- End Footer -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="social-media" style="text-align: center; margin: 20px 0;">
+          <a href="https://www.facebook.com/profile.php?id=61559224093249&mibextid=ZbWKwL" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/pozhilan2020/" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+         <a href="https://www.twitter.com" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" style="color: whitesmoke; margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        <div class="copyright">
+          &copy; Copyright <strong>Pozhilan Solutions</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="mailto:pozhilansolutions@gmail.com" style="color: rgb(181, 154, 2);">Pozhilan Solutions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- End Footer -->
+  
+<style>
+/* Media queries */
+
+@media (max-width: 1600px) {
+ 
+
+  #footer .google-map iframe {
+    height: 150px;
+    width: 200px;
+  }
+  .col-md-4 {
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  /* .col-md-4 {
+  text-align: center;
+} */
+.quick-links{
+  margin-bottom: 80px;
+  margin-left: 50px ;
+ max-width: 300px;
+}
+.contact-details{
+  align-items: center;
+  margin-left: 50px;
+}
+.google-map {
+  margin-left: 30px;
+}
+
+.google-map.h4{
+  margin-right: 40px;
+  align-items: center;
+  display: none;
+}
+
+
+}
+     
+</style>
+
+
+
+
+
+
+
+
+
+ 
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -208,7 +617,141 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <!-- Left floating icon -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Left floating icon -->
+            <div class="floating-contact left">
+              <a href="https://wa.me/8148086997"target="blank">
+                <img src="assets/img/whats.png" alt="WhatsApp Icon">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Right floating icon -->
+          
+          </div>
+        </div>
+      </div>
+   
+    
 
+<!-- script for testimonial swiper button starts -->
+
+<script>  document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.swiper-container', {
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+  });
+});
+</script>
+<!-- script for testimonial swiper button end -->
+
+<!-- script for nav bar scroll and active in mobile version starts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Function to update active class based on scroll position
+    function updateActiveClass() {
+      var scrollPos = $(document).scrollTop();
+      $('#menuBox ul li').removeClass('active');
+      $('#menuBox ul li').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.find('a').attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#menuBox ul li').removeClass("active");
+          currLink.addClass("active");
+        }
+      });
+    }
+
+    // Call the function on scroll
+    $(document).scroll(function() {
+      updateActiveClass();
+    });
+
+    // Call the function on page load
+    updateActiveClass();
+  });
+</script>
+
+<!-- script for nav bar scroll and active in mobile version end -->
+
+<!-- script for navbar open in mobile version starts -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  let menuBox = document.getElementById("menuBox");
+  let menuIcon = document.getElementById("menuIcon");
+  let closeIcon = document.querySelector(".close-icon");
+
+  // Function to toggle the menu box and menu icons
+  function toggleMenu() {
+    menuBox.classList.toggle("open-menu");
+
+    // Toggle rotation of the menu icon
+    menuIcon.classList.toggle("open-menu");
+
+    // Toggle rotation of the close icon
+    closeIcon.classList.toggle("open-menu");
+  }
+
+  // Toggle menu box and menu icons when menu icon is clicked
+  menuIcon.onclick = function() {
+    toggleMenu();
+  };
+
+  // Add click event listener to the close icon
+  closeIcon.addEventListener("click", function() {
+    // Hide the menu box
+    menuBox.classList.remove("open-menu");
+    // Reset rotation of the menu icon and close icon
+    menuIcon.classList.remove("open-menu");
+    this.classList.remove("open-menu");
+  });
+});
+</script>
+
+
+<!-- script for navbar open in mobile version end -->
+
+<script>
+  // Initialize Swiper
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 5,
+    loop: true,
+    autoplay: {
+      delay: 2000, // Change delay according to your preference
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6672ac59981b6c56477ed4fd/1i0nv2frh';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  
 </body>
 
-</html>
+</html> 
