@@ -73,7 +73,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #b7a700;
+  background: #918617;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -87,7 +87,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #1bd6fc;
+  background: #a17903;
   color: #fff;
 }
 
@@ -306,8 +306,8 @@ h6 {
 }
 
 #hero .btn-get-started {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: #8f8105;
+  border: 2px solid #d3d611;
   color: #fff;
 }
 
